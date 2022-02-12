@@ -1,0 +1,34 @@
+.alarm-clock
+{
+    font-size: 3vw;
+    position: absolute;
+    right: 3vw;
+    top: 9vw;
+    animation: alarm 1s linear 0s infinite alternate;
+}
+@keyframes alarm 
+{
+    from
+    {
+        transform: translateY(-15px) rotate3d(0,0,1,25deg);
+        /* transform: rotate3d(0,0,1,25deg); */
+    }    
+    to
+    {
+        transform: translateY(15px) rotate3d(0,0,1,-15deg);
+        /* transform: rotate3d(0,0,1,-25deg); */
+    }
+}
+.navi
+{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: linear-gradient(45deg,violet,red,white,black);
+    padding: 2vw;
+    /* margin-top: 0vw; */
+    z-index: 100;
+    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0vw;
+}

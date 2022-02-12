@@ -1,0 +1,66 @@
+.top-stories
+{
+    width: 39vw;
+}
+.top-title
+{
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+.bigger-img-card
+{
+    position: relative;
+    margin-top: 2vw;
+    overflow: hidden;
+}
+.bigger-img-card img
+{
+    width: 100%;
+    height: 26vw;
+    transition: transform 1s;
+}
+.bigger-img-card img:hover
+{
+    filter: brightness(60%);
+    transform: scale(1.08,1.08);
+}
+.bigger-img-card .text-content
+{
+    position: absolute;
+    bottom: 1vw;
+    left: 2vw;
+    color: white;
+    width: 29vw;
+}
+.by-author
+{
+    font-size: 0.9vw;
+}
+.small-img-card-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2vw;
+}
+.small-img-card
+{
+    width: 18.3vw;
+    overflow: hidden;
+}
+.small-img-card img
+{
+    width: 100%;
+    height: 16vw;
+    transition: transform 1s;
+}
+.small-img-card img:hover
+{
+    filter: brightness(60%);
+    transform: scale(1.08,1.08);
+}
+.small-img-card h3
+{
+    height: 5vw;
+    font-size: 1.3vw
+}

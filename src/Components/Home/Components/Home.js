@@ -1,5 +1,6 @@
 import React from 'react';
 import CategoryOne from '../../Category Component/CategoryOne';
+import CategotyTwo from '../../Category Component/CategotyTwo';
 import Footer from '../../Comon/Footer';
 import Navbar from '../../Comon/Navbar';
 import './../Styles/Home.css'
@@ -35,73 +36,7 @@ function Home(props) {
                 <LatestStories />
             </div>
             <CategoryOne />
-            <div className="category-data">
-                <h2>Category 3</h2>
-                <div className="category-container">
-                    <div className="big-card-second-category">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJr2-HpJq62inTMCq4uY7TsQ2TtwL94VEbcA&usqp=CAU" alt="cabinet"></img>
-                        <div className="text-content">
-                            <h1>Buy Your Dream Customized PC Cabinte</h1>
-                            <p className="by-author">BY OSCAR GONZALEZ</p>
-                        </div>
-                    </div>
-                    <div className="big-card-second-category">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJr2-HpJq62inTMCq4uY7TsQ2TtwL94VEbcA&usqp=CAU" alt="cabinet"></img>
-                        <div className="text-content">
-                            <h1>Buy Your Dream Customized PC Cabinte</h1>
-                            <p className="by-author">BY OSCAR GONZALEZ</p>
-                        </div>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                    <div className="category-third-sm-card">
-                        <img src="https://i.gadgets360cdn.com/large/mvp_pc_build_1604313319165.jpg?downsize=950:*" alt="hello" />
-                        <div>
-                            <h3>Title of the Article will be here</h3>
-                            <p>description of article will be here</p>
-                        </div>
-                        <p>23 HRS AGO</p>
-                    </div>
-                </div>
-            </div>
+            <CategotyTwo />
             <Footer />
         </div>
     );

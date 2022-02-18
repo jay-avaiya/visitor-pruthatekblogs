@@ -5,14 +5,49 @@ import TopStoriesData from './../../../JSON/topstories.json'
 
 function TopStories(props) {
     return (
-        <div className="top-stories">
+        <div>
             <p className="top-title">TOP STORIES</p>
-            {
+            <div className="top-stories">
+                {
+                    TopStoriesData.map((blog, index) => {
+                        if (index % 3 === 0) {
+                            return (
+                                <Link to={{
+                                    pathname: "/Blog/customized",
+                                    state: blog
+                                }} key={index}>
+                                    <div className="bigger-img-card" key={index}>
+                                        <img src={blog.imgPath} alt="cabinet"></img>
+                                        <div className="text-content">
+                                            <h1>{blog.blogTitle}</h1>
+                                            <p className="by-author">{blog.author}</p>
+                                        </div>
+                                    </div>
+                                </Link>)
+                        }
+                        else {
+                            return (
+                                <div className="small-img-card" key={index}>
+                                    <Link to={{
+                                        pathname: `/Blog/${blog.blogTitle}`,
+                                        state: blog
+                                    }} key={index} className="Link-react">
+                                        <img src={blog.imgPath} alt="cabinet" />
+                                        <h3 className="sm-img-card-title">{blog.blogTitle}</h3>
+                                    </Link>
+                                    <p className="by-author">{blog.author}</p>
+                                </div>
+                            )
+                        }
+                    })
+                }
+            </div>
+            {/* {
                 TopStoriesData.map((blog, index) => (
                     <div key={index}>
                         <Link to={{
                             pathname: "/Blog/customized",
-                            state: "Customised PC By Harshil"
+                            state: blog
                         }}>
                             <div className="bigger-img-card" key={index}>
                                 <img src={blog.imgPath} alt="cabinet"></img>
@@ -35,7 +70,7 @@ function TopStories(props) {
                         </div>
                     </div>
                 ))
-            }
+            } */}
         </div>
     );
 }

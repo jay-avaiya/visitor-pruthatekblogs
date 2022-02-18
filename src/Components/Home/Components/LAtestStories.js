@@ -10,7 +10,7 @@ function LatestStories(props) {
                 <div className="latest-card" key={index}>
                     <img src={blog.imgPath} alt="hello" className="latest-card-img" />
                     <div className="latest-card-text-content">
-                        <h3>{blog.blogTitle}</h3>
+                        <h3 className="latest-title">{blog.blogTitle}</h3>
                         <p className="description">{blog.shortDescription}</p>
                         <p className="by-author">{blog.author}</p>
                     </div>

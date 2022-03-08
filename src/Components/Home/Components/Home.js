@@ -22,7 +22,7 @@ function Home(props) {
     //     setSelectedOption(e.value)
     // }
     return (
-        <div>
+        <div className="main-bg">
             <Navbar />
             {/* <div style={{width : "12vw",marginLeft : "auto",marginRight:"auto"}}>
                 <Select

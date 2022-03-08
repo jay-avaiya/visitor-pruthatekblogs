@@ -16,7 +16,7 @@ function TopStories(props) {
                                     pathname: "/Blog/customized",
                                     state: blog
                                 }} key={index}>
-                                    <div className="bigger-img-card" key={index}>
+                                    <div className="bigger-img-card" key={index} data-aos="fade-up">
                                         <img src={blog.imgPath} alt="cabinet"></img>
                                         <div className="text-content">
                                             <h1>{blog.blogTitle}</h1>
@@ -27,7 +27,7 @@ function TopStories(props) {
                         }
                         else {
                             return (
-                                <div className="small-img-card" key={index}>
+                                <div className="small-img-card" key={index} data-aos="fade-up">
                                     <Link to={{
                                         pathname: `/Blog/${blog.blogTitle}`,
                                         state: blog

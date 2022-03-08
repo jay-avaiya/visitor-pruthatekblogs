@@ -1,0 +1,38 @@
+import React,{useState} from 'react';
+import Footer from '../Comon/Footer';
+import Navbar from '../Comon/Navbar';
+import {AiFillEye,AiFillEyeInvisible} from 'react-icons/ai'
+
+function AdminLogin(props) {
+    const [eyeIcon,seteyeIcon] = useState(true)
+    const visiblePass = (e) =>{
+        console.log(e);
+        const userPassword = document.querySelector("#password")
+        const type = userPassword.getAttribute('type') === 'password' ? 'text' : 'password'
+        userPassword.setAttribute('type',type)
+        seteyeIcon(!eyeIcon)
+    }
+    return (
+        <>
+            <Navbar />
+            <div class="box">
+                <h2>Admin Login</h2>
+                <form action="">
+                    <div class="input-box">
+                        <input type="text" id="username" required />
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" required />
+                        <label for="password">Password</label>
+                        {eyeIcon ? <AiFillEye className="eye" onClick={visiblePass}/> : <AiFillEyeInvisible className="eye" onClick={visiblePass}/>  }
+                    </div>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+            <Footer />
+        </>
+    );
+}
+
+export default AdminLogin;

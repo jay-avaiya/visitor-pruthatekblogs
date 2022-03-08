@@ -3,6 +3,7 @@ import './NAvbar.css'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { FaUserAlt } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { Link } from 'react-router-dom';
 
 function Navbar(props) {
     useEffect(() => {
@@ -23,8 +24,8 @@ function Navbar(props) {
             <h2>LOGO</h2>
             <div className="navbar-menu">
                 <div className="navbar-ul">
-                    <p className="main-menu-div">Reviews<AiFillCaretDown />
-                        <div className="sub-menu-div">
+                    <p className="main-menu-div">Reviews
+                        {/* <div className="sub-menu-div">
                             <p className="inside-title">All reviews</p>
                             <div className="links">
                                 <div>
@@ -44,7 +45,7 @@ function Navbar(props) {
                                     <p>Item link 8</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </p>
                     <p className="main-menu-div">Cars<AiFillCaretDown />
                         <div className="sub-menu-div">
@@ -184,7 +185,7 @@ function Navbar(props) {
                     <button className="log-button-navbar-menu"><FaUserAlt className="user-icon" /> Sign In / Sign Up </button>
                 </ul> */}
             </div>
-            <button className="log-button"><FaUserAlt className="user-icon" /> Sign In / Sign Up </button>
+            <Link to="/blogupload" className="log-button"><FaUserAlt className="user-icon" /> Sign In / Sign Up </Link>
             <GiHamburgerMenu className="hamburger" onClick={visible}/>
         </div>
     );

@@ -19,7 +19,7 @@
 }
 .blog-upload-home table tr:nth-child(even)
 {
-    background-color: rgba(128, 128, 128);
+    background-color: rgba(30, 143, 255, 0.651);
     border-bottom: 1px solid black;
     color: white;
 }

@@ -45,7 +45,7 @@ function DetailedBlog(props) {
                     </p>
                 </div>
                 <ReactPlayer
-                    url="https://youtu.be/01nT4LALYco"
+                    url="https://www.youtube.com/embed/Nv8upm_RGNM"
                     className="react-player"
                     playing={true}
                     loop={true}

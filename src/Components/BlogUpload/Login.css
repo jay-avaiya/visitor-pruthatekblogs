@@ -4,7 +4,7 @@
 }
 .box
 {
-    width: 30vw;
+    width: 35vw;
     padding: 4vw;
     background: rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
@@ -17,17 +17,23 @@
     padding: 0px;
     color: #fff;
     text-align: center;
+    font-size: 1.6rem;
 }
 .box .input-box{
     position: relative;
 }
-.box .input-box input{
+.box .input-box input,
+.box .input-box input:-webkit-autofill,
+.box .input-box input:-webkit-autofill:hover,
+.box .input-box input:-webkit-autofill:focus,
+.box .input-box input:-webkit-autofill:active
+{
     width: 100%;
     padding: 10px 0px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
     border: none;
     outline: none;
     background: transparent;
@@ -62,4 +68,167 @@
     margin-top: 1.4vw;
     border-radius: 5px;
     cursor:pointer;
+}
+.eye
+{
+    position: absolute;
+    color: white;
+    top: 1vw;
+    font-size: 1.2vw;
+    right: 0px;
+}
+.eye:hover
+{
+    cursor: pointer;
+}
+@media only screen and (max-width : 1024px) 
+{
+    .box
+    {
+        width: 50vw;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }    
+    .box h2
+    {
+        font-size: 2vw;
+    }
+    .box .input-box label,
+    .box .input-box input:focus ~ label,
+    .box .input-box input:valid ~ label
+    {
+        font-size: 1.6vw;
+    }
+
+    .box .input-box input,
+    .box .input-box input:-webkit-autofill,
+    .box .input-box input:-webkit-autofill:hover,
+    .box .input-box input:-webkit-autofill:focus,
+    .box .input-box input:-webkit-autofill:active
+    {
+        font-size: 1.6vw;
+        margin-bottom: 3vw;
+    }
+}
+@media only screen and (max-width : 768px) 
+{
+    .box
+    {
+        width: 70vw;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    }    
+    .box h2
+    {
+        font-size: 2.6vw;
+    }
+    .box .input-box label,
+    .box .input-box input:focus ~ label,
+    .box .input-box input:valid ~ label
+    {
+        font-size: 1.6vw;
+    }
+
+    .box .input-box input,
+    .box .input-box input:-webkit-autofill,
+    .box .input-box input:-webkit-autofill:hover,
+    .box .input-box input:-webkit-autofill:focus,
+    .box .input-box input:-webkit-autofill:active
+    {
+        font-size: 1.6vw;
+        margin-bottom: 3.6vw;
+    }
+    .box button[type="submit"]
+    {
+        font-size: 1.6vw;
+    }
+    .eye
+    {
+        position: absolute;
+        color: white;
+        top: 1.6vw;
+        font-size: 2vw;
+        right: 0px;
+    }
+}
+@media only screen and (max-width : 600px) 
+{
+    .box
+    {
+        width: 75vw;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 7vw;
+    }    
+    .box h2
+    {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+    .box .input-box label,
+    .box .input-box input:focus ~ label,
+    .box .input-box input:valid ~ label
+    {
+        font-size: 1.8vw;
+    }
+
+    .box .input-box input,
+    .box .input-box input:-webkit-autofill,
+    .box .input-box input:-webkit-autofill:hover,
+    .box .input-box input:-webkit-autofill:focus,
+    .box .input-box input:-webkit-autofill:active
+    {
+        font-size: 1.8vw;
+        margin-bottom: 4vw;
+    }
+    .box button[type="submit"]
+    {
+        font-size: 2.2vw;
+    }
+    .eye
+    {
+        position: absolute;
+        color: white;
+        top: 1.6vw;
+        font-size: 2vw;
+        right: 0px;
+    }
+}
+@media only screen and (max-width : 430px) 
+{
+    .box
+    {
+        width: 68vw;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 7vw;
+    }    
+    .box h2
+    {
+        font-size: 3.6vw;
+        margin-bottom: 5vw;
+    }
+    .box .input-box label
+    {
+        font-size: 2.2vw;
+    }
+
+    .box .input-box input,
+    .box .input-box input:-webkit-autofill,
+    .box .input-box input:-webkit-autofill:hover,
+    .box .input-box input:-webkit-autofill:focus,
+    .box .input-box input:-webkit-autofill:active
+    {
+        font-size: 2.2vw;
+        margin-bottom: 4vw;
+    }
+    .box button[type="submit"]
+    {
+        font-size: 2.7vw;
+        padding: 2vw;
+    }
+    .eye
+    {
+        position: absolute;
+        color: white;
+        top: 2.2vw;
+        font-size: 3vw;
+        right: 0px;
+    }
 }

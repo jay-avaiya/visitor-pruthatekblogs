@@ -19,7 +19,11 @@
 }
 .blog-upload-home table tr:nth-child(even)
 {
-    background-color: rgba(30, 143, 255, 0.651);
+    background-color: rgba(0, 0, 0, 0.651);
     border-bottom: 1px solid black;
     color: white;
 }
+/* .blog-upload-home table tr:nth-child(even) .decision-mark-accept
+{
+    color: rgb(157, 255, 0);
+} */

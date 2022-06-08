@@ -19,11 +19,11 @@ function AdminLogin(props) {
                 <h2>Admin Login</h2>
                 <form action="">
                     <div class="input-box">
-                        <input type="text" id="username" required />
+                        <input type="text" id="username" autocomplete="off" required />
                         <label for="username">Username</label>
                     </div>
                     <div class="input-box">
-                        <input type="password" id="password" required />
+                        <input type="password" autocomplete="off" id="password" required />
                         <label for="password">Password</label>
                         {eyeIcon ? <AiFillEye className="eye" onClick={visiblePass}/> : <AiFillEyeInvisible className="eye" onClick={visiblePass}/>  }
                     </div>

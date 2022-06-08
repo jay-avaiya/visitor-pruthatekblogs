@@ -21,7 +21,9 @@ function Navbar(props) {
     }
     return (
         <div className="blog-navbar">
-            <h2>LOGO</h2>
+            <Link to="/" >
+                <img src="/Logo.png" alt="Pruthatek-logo" className="pruthatek-blog-logo" />
+            </Link>
             <div className="navbar-menu">
                 <div className="navbar-ul">
                     <p className="main-menu-div">Reviews
@@ -185,8 +187,8 @@ function Navbar(props) {
                     <button className="log-button-navbar-menu"><FaUserAlt className="user-icon" /> Sign In / Sign Up </button>
                 </ul> */}
             </div>
-            <Link to="/blogupload" className="log-button"><FaUserAlt className="user-icon" /> Sign In / Sign Up </Link>
-            <GiHamburgerMenu className="hamburger" onClick={visible}/>
+            <Link to="/login" className="log-button"><FaUserAlt className="user-icon" /> Sign In</Link>
+            <GiHamburgerMenu className="hamburger" onClick={visible} />
         </div>
     );
 }

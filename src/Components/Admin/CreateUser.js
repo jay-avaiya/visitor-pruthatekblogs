@@ -26,7 +26,7 @@ function CreateUser(props) {
             <Navbar />
             <div class="box">
                 <h2>Enter Details</h2>
-                <form action="">
+                <form autoComplete="off">
                     <div class="input-box">
                         <input type="text" id="username" required />
                         <label for="username">Username</label>

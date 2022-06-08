@@ -13,6 +13,8 @@ import Declined from './Components/BlogUpload/Declined';
 import CreateUser from './Components/Admin/CreateUser';
 import Allblogs from './Components/Admin/Allblogs';
 import AdminLogin from './Components/Admin/Login';
+import RequestBlogs from './Components/Admin/RequestBlogs';
+import CookiesNotification from './Components/Comon/CookiesNotification';
 
 function App() {
   useEffect(() => {
@@ -23,16 +25,18 @@ function App() {
   })
   return (
     <>
+      {/* <CookiesNotification /> */}
       <BrowserRouter>
         <Route path="/Blog/:title" component={DetailedBlog} exact />
         <Route path="/blogupload/home" component={home} exact />
-        <Route path="/blogupload/login" component={Login} exact />
+        <Route path="/login" component={Login} exact />
         <Route path="/blogupload/verification" component={Verification} exact />
         <Route path="/blogupload/declined" component={Declined} exact />
         <Route path="/blogupload" component={BlogUpload} exact />
         <Route path="/admin/createUser" component={CreateUser} exact />
         <Route path="/admin/allblogs" component={Allblogs} exact />
         <Route path="/admin/login" component={AdminLogin} exact />
+        <Route path="/admin/requests" component={RequestBlogs} exact />
         <Route path="/" component={Home} exact />
       </BrowserRouter>
     </>

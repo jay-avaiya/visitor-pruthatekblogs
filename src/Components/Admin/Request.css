@@ -1,0 +1,25 @@
+.decision-mark-accept
+{
+    /* background-color: white;
+    border-radius: 50%; */
+    color: rgb(157, 255, 0);
+    /* border: 1px solid green;
+    height: 0.8vw;
+    width: 1vw; */
+}
+/* .decision-mark-accept:nth-child(even)
+{
+    color: black;
+} */
+.decision-mark-accept:hover
+{
+    cursor: pointer;
+}
+.decision-mark-decline
+{
+    color: red;
+}
+.decision-mark-decline:hover
+{
+    cursor: pointer;
+}

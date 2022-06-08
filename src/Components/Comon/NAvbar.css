@@ -7,6 +7,10 @@
     align-items: center;
     margin: 0.5vw 2vw;
 }
+.pruthatek-blog-logo
+{
+    width: 17vw;
+}
 .blog-navbar h2
 {
     font-size: 1.8vw;
@@ -180,6 +184,14 @@
         text-align: center;
         animation: scaling 1s linear 0s 1 alternate;
     }
+    .pruthatek-blog-logo
+    {
+        width: 20vw;
+    }
+    .blog-navbar
+    {
+        margin: 2.5vw 2vw;
+    }
     @keyframes scaling {
         from
         {
@@ -214,7 +226,7 @@
     }
     .blog-navbar
     {
-        margin: 0vw 6vw;
+        margin: 3vw 6vw;
     }
     .blog-navbar h2
     {
@@ -223,5 +235,9 @@
     .navbar-ul
     {
         margin-top: 5vw;
+    }
+    .pruthatek-blog-logo
+    {
+        width: 32vw;
     }
 }

@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
     /* align-items: center; */
 }
 .footer-links-title
@@ -54,6 +55,11 @@
     flex-direction: row;
     font-size: 1.7vw;
 }
+.social-media-icons a
+{
+    text-decoration: none;
+    color: inherit;
+}
 /* .About-links
 {
     border-left: 3.8px dotted green;
@@ -74,8 +80,9 @@
 .footer .social-media .social-media-icons a
 {
     text-decoration: none;
-    color: white;
+    /* color: white; */
     margin: 0vw;
+    font-size: 2vw;
 }
 .footer .insta:hover
 {
@@ -90,4 +97,86 @@
     width: 20vw;
     margin-top: 3vw;
     font-size: 1.1vw;
+}
+.about-policies-flex-cont
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 30vw;
+}
+@media only screen and (max-width : 600px) 
+{
+    .about-policies-flex-cont
+    {
+        width: 67vw;
+    }    
+    .social-media
+    {
+        width: 40vw;
+    }
+    .footer-links-title
+    {
+        font-size: 2.4vw;
+    }
+    .footer a
+    {
+        font-size: 2vw;
+    }
+    .footer img
+    {
+        width: 30vw;
+    }
+    .social-media
+    {
+        margin-top: 3vw;
+    }
+    .footer .social-media .social-media-icons a
+    {
+        font-size: 3vw;
+    }
+    .rights
+    {
+        margin-top: 1vw;
+        font-size: 2vw;
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 430px) 
+{
+    .about-policies-flex-cont
+    {
+        width: 75vw;
+    }    
+    .social-media
+    {
+        width: 50vw;
+    }
+    .footer-links-title
+    {
+        font-size: 3.3vw;
+        /* font-weight: 500; */
+    }
+    .footer a
+    {
+        font-size: 2.9vw;
+    }
+    .footer img
+    {
+        width: 40vw;
+    }
+    .social-media
+    {
+        margin-top: 3vw;
+    }
+    .footer .social-media .social-media-icons a
+    {
+        font-size: 4.4vw;
+    }
+    .rights
+    {
+        margin-top: 2.5vw;
+        font-size: 2.6vw;
+        width: 100vw;
+    }
 }

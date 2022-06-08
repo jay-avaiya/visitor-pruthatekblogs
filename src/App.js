@@ -14,7 +14,7 @@ import CreateUser from './Components/Admin/CreateUser';
 import Allblogs from './Components/Admin/Allblogs';
 import AdminLogin from './Components/Admin/Login';
 import RequestBlogs from './Components/Admin/RequestBlogs';
-import CookiesNotification from './Components/Comon/CookiesNotification';
+// import CookiesNotification from './Components/Comon/CookiesNotification';
 
 function App() {
   useEffect(() => {

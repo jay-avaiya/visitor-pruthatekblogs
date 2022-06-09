@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Comon/Navbar';
 import './blogUpload.css'
-import Select from 'react-select'
 import Footer from '../Comon/Footer';
 
 
@@ -19,17 +18,7 @@ function BlogUpload(props) {
     useEffect(() => {
         document.title = "Upload Blog"
     })
-    const options = [
-        { value: 'Electronic', label: 'Electronic' },
-        { value: 'News', label: 'News' },
-        { value: 'Games', label: 'Games' },
-        { value: 'Reviews', label: 'Reviews' },
-        { value: 'Cars', label: 'Cars' },
-    ];
     console.log(selectedOption);
-    const sel = (e) => {
-        setSelectedOption(e.value)
-    }
     const showValues = (e) =>{
         e.preventDefault();
         console.log({
@@ -64,13 +53,13 @@ function BlogUpload(props) {
                     <input type="file" required/>
 
                     <p>Type of Blog</p>
-                    <div>
-                        <Select
-                            defaultValue={selectedOption}
-                            onChange={sel}
-                            options={options}
-                        />
-                    </div>
+                    <select value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)} className="blog-options" >
+                        <option value="Electronic" >Electronic</option>
+                        <option value="News" >News</option>
+                        <option value="Games" >Games</option>
+                        <option value="Reviews" >Reviews</option>
+                        <option value="Cars" >Cars</option>
+                    </select>
 
                     <p>Heading-1</p>
                     <input type="text" placeholder="Enter your first heading" value={heading1} onChange={(e) => setheading1(e.target.value)}  required/>

@@ -6,14 +6,17 @@
 .blog-detail-form
 {
     margin: 2vw 14vw;
-    padding: 2vw;
+    padding: 2vw 5vw 2vw 3vw;
     border: 1px solid gray;
     border-radius: 12px;
-    background-image: linear-gradient(270deg,violet,red);
+    /* background-image: url('/public/bg3.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: linear-gradient(270deg,violet,red); */
     /* background-color: #EFA706; */
-    color: white;
+    color: black;
     overflow: hidden;
-    filter: hue-rotate(170deg);
+    /* filter: hue-rotate(170deg); */
 }
 .blog-detail-form form p
 {
@@ -23,27 +26,34 @@
 {
     padding: 0.6vw;
     border-bottom: 1px solid black;
-    border-radius: 12px;
+    border-radius: 0.8vw;
     background: transparent;
 }
 .blog-detail-form textarea
 {
     padding: 0.6vw;
     border-bottom: 1px solid black;
-    border-radius: 12px;
+    border-radius: 0.8vw;
     background: transparent;
 }
-.blog-detail-form textarea::placeholder
+.blog-detail-form textarea::placeholder, .blog-detail-form textarea
 {
-    color: white;
+    /* color: white; */
 }
-.blog-detail-form input::placeholder
+.blog-detail-form input::placeholder, .blog-detail-form input
 {
-    color: white;
+    /* color: white; */
 }
 .blog-detail-form p
 {
     font-size: 1.1vw;
+    /* color: white; */
+}
+.blog-options
+{
+    width: 101%;
+    padding: 0.6vw 0vw;
+    font-size: 1vw;
 }
 .blog-detail-form input,.blog-detail-form textarea
 {
@@ -84,5 +94,29 @@
     background: transparent;
     border: 2px solid #EFA706;
     cursor: pointer;
-    color: white;
+    color: #000;
+}
+@media only screen and (max-width : 500px)
+{
+ .blog-detail-form form p
+ {
+     font-size: 2.3vw;
+     margin-bottom: 3px;
+ }    
+.blog-detail-form input[type = "text"]
+{
+    font-size: 2vw;
+}
+.blog-options
+{
+    font-size: 2vw;
+}
+.blog-detail-form textarea
+{
+    font-size: 2vw;
+}
+.form-btn
+{
+    font-size: 2vw;
+}
 }

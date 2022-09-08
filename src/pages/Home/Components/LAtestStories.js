@@ -2,18 +2,29 @@ import React, { useContext, useEffect } from "react";
 import "./../Styles/LatestStories.css";
 import { StoryContext } from "../../../context/StoriesContext";
 import moment from "moment";
+import { useHistory } from "react-router-dom";
 // import Fade from 'react-reveal/Fade'
 
 function LatestStories(props) {
   const {
     state: { latestStories },
   } = useContext(StoryContext);
+  const history = useHistory();
+
+  const blogClick = (blog) => {
+    history.push(`/blog/${blog.uuid}`);
+  };
 
   return (
     <div className="latest-stories">
       <p className="latest-title">LATEST STORIES</p>
       {latestStories.map((blog, index) => (
-        <div className="latest-card" key={index} data-aos="fade-up">
+        <div
+          className="latest-card"
+          key={index}
+          data-aos="fade-up"
+          onClick={() => blogClick(blog)}
+        >
           <img
             src={`${process.env.REACT_APP_IMG_BASEURL}/${blog.thumbnail_img}`}
             alt="hello"

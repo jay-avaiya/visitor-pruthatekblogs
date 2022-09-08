@@ -2,11 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import Footer from "../../../Components/Comon/Footer";
+import Navbar from "../../../Components/Comon/Navbar";
 import { constants, StoryContext } from "../../../context/StoriesContext";
-import CategoryOne from "../../Category Component/CategoryOne";
-import CategotyTwo from "../../Category Component/CategotyTwo";
-import Footer from "../../Comon/Footer";
-import Navbar from "../../Comon/Navbar";
 import "./../Styles/Home.css";
 import LatestStories from "./LAtestStories";
 import TopStories from "./TopStories";
@@ -48,8 +46,8 @@ function Home(props) {
             <TopStories />
             <LatestStories />
           </div>
-          <CategoryOne />
-          <CategotyTwo />
+          {/* <CategoryOne />
+          <CategotyTwo /> */}
         </>
       )}
       <Footer />
